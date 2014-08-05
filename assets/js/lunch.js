@@ -71,7 +71,6 @@ var Application = window.Application = (function() {
       }
     var directionsDisplay;
     var directionsService = new google.maps.DirectionsService();
-    var map;
     function initialize(mylat, mylng, lat, lng) {
       directionsDisplay = new google.maps.DirectionsRenderer();
       var myLatlng = new google.maps.LatLng(mylat, mylng);
@@ -79,7 +78,7 @@ var Application = window.Application = (function() {
         zoom: 15,
         center: myLatlng
       };
-      map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+      var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
       directionsDisplay.setMap(map);
       calcRoute(mylat, mylng, lat, lng);
     }

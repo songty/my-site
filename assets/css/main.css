@@ -141,6 +141,15 @@ a:after {
     margin: 0 auto;
     clear:both;
 }
+/* Flickr Photos */
+img.flickr {
+  width: 150px;
+  height: 150px;
+  margin: 0px;
+  padding: 1%;
+  display: block;
+  float: left;
+}
 
 /* Helpers */
 

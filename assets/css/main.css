@@ -113,6 +113,13 @@ a:after {
 	letter-spacing: 2px;
 }
 
+.navbar-collapse.collapse {
+  background-color: #1abc9c;
+  border-color: #16a085;
+  padding: 5px;
+  margin: 0;
+}
+
 .navbar-inverse .navbar-brand {
 	color: white;
 }

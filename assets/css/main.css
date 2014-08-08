@@ -76,8 +76,9 @@ hr {
   padding: 0;
 }
 
-ul li {
+ul {
   list-style-type: none;
+  font-size: 18px;
 }
 
 
@@ -127,6 +128,17 @@ ul li {
 
 .progress-bar-theme {
   background-color: #1abc9c;
+}
+
+/* Columns */
+
+div.col-2 {
+    -webkit-column-count: 2;
+    -webkit-column-gap: 10px;
+    -moz-column-count: 2;
+    -moz-column-gap: 10px;
+    column-count:2;
+    column-gap:10px;
 }
 
 /* Google Map */

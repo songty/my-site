@@ -13,9 +13,9 @@ var Application = window.Application = (function() {
           'client_id': 'ZEFCPOZI0JUGL1H2IKFMHO1PLHSWCOKKZSDOUSPHYQ2QHNEO',
           'client_secret': 'I214RPZ3LOUZXYXAESRLBGZRJCVI2J1EKYPVSOGPPCH5RZQN',
           'v': '20140612',
-          'radius': '7000',
+          'radius': '5000',
           'section': 'food',
-          'limit': '200',
+          'limit': '100',
           'venuePhotos': '1'
         };
         $.ajax(url, { dataType: 'jsonp', data: fourSquareOptions})

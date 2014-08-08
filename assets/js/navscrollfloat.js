@@ -1,6 +1,6 @@
 $(function() {
     // Stick the #nav to the top of the window
-    var nav = $('.navbar.navbar-inverse.navbar-static-top > .container');
+    var nav = $('.navbar.navbar-inverse.navbar-static-top');
     var navHomeY = nav.offset().top;
     var isFixed = false;
     var $w = $(window);
@@ -12,8 +12,7 @@ $(function() {
                 position: 'fixed',
                 top: 0,
                 left: nav.offset().left,
-                width: nav.width,
-                'background-color': '#1abc9c'
+                width: nav.width()
             });
             isFixed = true;
         }

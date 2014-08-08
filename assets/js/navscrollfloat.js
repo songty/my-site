@@ -12,7 +12,8 @@ $(function() {
                 position: 'fixed',
                 top: 0,
                 left: nav.offset().left,
-                width: nav.width()
+                width: nav.width,
+                'background-color': '#1abc9c'
             });
             isFixed = true;
         }

@@ -167,7 +167,7 @@ div.col-2 {
   clear:both;
 }
 
-img {
+.col-lg-6.col-lg-offset-3.centered img {
   padding-bottom: 2%;
 }
 

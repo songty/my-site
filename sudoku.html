@@ -60,32 +60,32 @@
         <h3>Sudoku Solver</h3>
         <hr>
         <img src="assets/img/portfolio/sudoku.jpg" alt="sudoku">
-        <p>One of my first projects. You can see just how far I've come along juxtaposing this project with some of my more recent projects. Source code can be found <a href="https://github.com/songty/Sudoku-solver">here</a>. Solve logic bellow:</p>
+        <p>One of my first projects. You can see just how far I've come along juxtaposing this project with some of my more recent projects. Source code can be found <a href="https://github.com/songty/Sudoku-solver">here</a>. Solve logic below:</p>
       </div>
-       <div class="codebox">
-      <pre>
-        <code>
-        var solveOneSquare = function(square) {
-          if (checkForSolution(square)) {
-            solutions++;
-          } else {
-            checkRow(square);
-            checkColumn(square);
-            checkRegion(square);
-            if (square.falses === 8) {
-              var foundKeys = _.intersection(_.keys(square), keyCheck);
-              var solutionKey = 45 - _.reduce(foundKeys, function(sum, n) {
-              return sum + parseInt(n);
-              }, 0);
-              square.solution = solutionKey;
-              var thisObject = square;
-              thisObject[solutionKey.toString()] = true;
+      <div class="codebox">
+        <pre>
+          <code>
+          var solveOneSquare = function(square) {
+            if (checkForSolution(square)) {
               solutions++;
+            } else {
+              checkRow(square);
+              checkColumn(square);
+              checkRegion(square);
+              if (square.falses === 8) {
+                var foundKeys = _.intersection(_.keys(square), keyCheck);
+                var solutionKey = 45 - _.reduce(foundKeys, function(sum, n) {
+                return sum + parseInt(n);
+                }, 0);
+                square.solution = solutionKey;
+                var thisObject = square;
+                thisObject[solutionKey.toString()] = true;
+                solutions++;
+              }
             }
-          }
-        };
-        </code>
-      </pre>
+          };
+          </code>
+        </pre>
       </div>
     </div>
     <div class="row mt centered"> 

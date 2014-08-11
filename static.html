@@ -60,8 +60,31 @@
         <h3>Static Site Generator</h3>
         <hr>
         <img src="assets/img/portfolio/static.jpg" alt="static">
-        <p>Simple static site generator. Full testing coverage and published to <a href="https://www.npmjs.org/package/static-site-generator-">NPM</a>. Source code can be found <a href="https://github.com/songty/Static-site-generator">here</a>.</p>
+        <p>Simple static site generator. Full testing coverage and published to <a href="https://www.npmjs.org/package/static-site-generator-">NPM</a>. Source code can be found <a href="https://github.com/songty/Static-site-generator">here</a>. Sample code below:</p>
       </div>
+      <div class="codebox">
+        <pre>
+          <code>
+          program
+            .version(require('./package').version)
+            .option('-d, --deletegen', 'Deletes files in generated')
+            .option('-ab, --template-source', 'Generates template with source')
+            .option('-g, --gen', 'Makes the file with template and source')
+            .parse(process.argv);
+
+          if (program.gen) {
+            lib.generator(function() {});
+            console.log('You have generated files');
+          }
+
+          if (program.deletegen) {
+            lib.fileShreader(function(){}); 
+            console.log('You have deleted files!');
+          } 
+          </code>
+        </pre>
+      </div>
+    </div>
     </div>
     <div class="row mt centered"> 
       <div class="col-lg-8 col-lg-offset-2">

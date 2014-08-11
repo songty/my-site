@@ -130,6 +130,22 @@ ul {
   background-color: #1abc9c;
 }
 
+/* Code */
+.codebox {
+  border:1px solid black;
+  background-color:#EEEEFF;
+  width: 700px;
+  height: auto;
+  overflow:auto;    
+  padding:10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.codebox pre {
+  font-size:0.9em;
+  text-align: left;
+}
+
 /* Columns */
 
 div.col-2 {
@@ -149,6 +165,10 @@ div.col-2 {
   display: block;
   margin: 0 auto;
   clear:both;
+}
+
+img {
+  padding-bottom: 2%;
 }
 
 /* Flickr Photos */
